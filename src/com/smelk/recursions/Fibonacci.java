@@ -7,7 +7,9 @@ public class Fibonacci {
     }
 
     public static int findFibonacci(int value) {
-        if (value == 0 || value == 1) return value;
+        if (value == 0 || value == 1){
+            return value;
+        }
         return findFibonacci(value - 1) + findFibonacci(value - 2);
     }
 }

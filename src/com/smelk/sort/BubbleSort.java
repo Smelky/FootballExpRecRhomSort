@@ -1,14 +1,16 @@
 package com.smelk.sort;
 
 public class BubbleSort {
+
     public static void main(String[] args) {
-        long timeBefore = System.currentTimeMillis();
+
         int[] arrayForSort = new int[1_000_000];
 
         for (int i = 0; i < arrayForSort.length; i++) {
             arrayForSort[i] = (int) Math.round(Math.random() * 1_000_000);
         }
 
+        long timeBefore = System.currentTimeMillis();
         bubblesort(arrayForSort);
         long timeAfter = System.currentTimeMillis() - timeBefore;
         System.out.println("Lead time: " + timeAfter); // Lead time: 1753925 ms

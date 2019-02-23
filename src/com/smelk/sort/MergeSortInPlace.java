@@ -4,7 +4,6 @@ public class MergeSortInPlace {
 
     public static void main(String[] args) {
 
-        long timeBefore = System.currentTimeMillis();
         int[] arrayForSort = new int[1_000_000];
 
         for (int i = 0; i < arrayForSort.length; i++) {
@@ -12,6 +11,7 @@ public class MergeSortInPlace {
         }
         int arr_size = arrayForSort.length;
 
+        long timeBefore = System.currentTimeMillis();
         mergeSort(arrayForSort, 0, arr_size - 1);
         long timeAfter = System.currentTimeMillis() - timeBefore;
         System.out.println("Lead time: " + timeAfter); // Lead time: 81032 ms

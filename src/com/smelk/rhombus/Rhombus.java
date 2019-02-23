@@ -11,19 +11,16 @@ public class Rhombus {
         String star = "";
         String tab = "";
 
-        for (int i = 0; i <= size; i++) {
-            tab = tab + "  ";
+        for (int i = 0; i <= size + size; i++) {
+            tab = tab + " ";
         }
 
         for (int i = 0; i < size; i++) {
-            star = star + "**";
+            star = star + " *";
             System.out.println(tab + star);
-            try {
-                tab = tab.substring(0, i) + tab.substring(i + 1);
-            } catch (Exception e) {
-                break;
-            }
 
+            tab = tab.substring(0, i) + tab.substring(i + 1);
+            
         }
         tab = tab + " ";
 

@@ -20,7 +20,7 @@ public class Rhombus {
             System.out.println(tab + star);
 
             tab = tab.substring(0, i) + tab.substring(i + 1);
-            
+
         }
         tab = tab + " ";
 
